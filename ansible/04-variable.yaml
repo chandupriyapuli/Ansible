@@ -1,5 +1,5 @@
--name: Variables
-  hostname: localhost
+-name: variables
+  hosts: localhost
   var:
     name: "SinduPriya"
     course-duration: "4-months"
