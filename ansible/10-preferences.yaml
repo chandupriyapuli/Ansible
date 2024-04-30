@@ -6,7 +6,7 @@
   - 00-all-variables.yaml
   vars_prompt:
   -name: ENTER
-    prompt: enter somthing you want: 
+    prompt: enter somthing you want
     private: false
   tasks:  
   - name: Check Preference
