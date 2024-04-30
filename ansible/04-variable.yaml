@@ -7,7 +7,7 @@
   tasks:
   - name: print the given info
     ansile.builtin.debug:
-      msg: "Hi, I am {{name}}. I recently Joined {{course-duration}} duration course and fee is: {{amount}} Rupees" 
+      msg: "Hi, I am {{Student}}. I recently Joined {{Course-duration}} duration course and fee is: {{Amount}} Rupees" 
 
 
 
