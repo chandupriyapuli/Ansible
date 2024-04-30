@@ -5,8 +5,8 @@
   vars_files:
   - 00-all-variables.yaml
   vars_prompt:
-  -name: Taking input from Keyboard
-    prompt: "enter somthing you want: "
+  -name: ENTER
+    prompt: enter somthing you want: 
     private: false
   tasks:  
   - name: Check Preference
