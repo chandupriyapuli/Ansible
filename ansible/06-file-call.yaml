@@ -1,4 +1,4 @@
-- name: calling var_file
+- name: calling var file
   hosts: localhost
   vars-file:
   - 00-all-variables.yaml
