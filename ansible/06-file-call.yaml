@@ -1,7 +1,7 @@
-- name: calling var file
+- name: calling var_file
   hosts: localhost
   vars-file:
-  - 00-all-variables.yaml
+   - 00-all-variables.yaml
   tasks:
   - name: fetch the variable info to current class
     ansible.builtin.debug:
