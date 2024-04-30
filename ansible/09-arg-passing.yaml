@@ -10,3 +10,5 @@
 # 18.212.81.213 | 172.31.25.135 | t2.micro | https://github.com/chandupriyapuli/Ansible.git
 # [ ec2-user@ip-172-31-25-135 ~/Ansible/ansible ]$ ansible-playbook -i 02-inventory.ini -e ansible_user=ec2-user
 # -e ansible_password=DevOps321 09-arg-passing.yaml -e "PERSON=sindu HELLO=hi"
+
+# -e PERSON=sindu -e HELLO=hi 
