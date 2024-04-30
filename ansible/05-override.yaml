@@ -1,11 +1,11 @@
 - name: variable override
   hosts: localhost
-  vars:
+  vars: #playlevel variable
     Course: "Ansible"
     Duration: "4_months"
   tasks:
   - name: Print DevOps Course
-    vars:
+    vars: # Task level variable
       Course: "DevOps"
     ansible.builtin.debug:
       msg: 
