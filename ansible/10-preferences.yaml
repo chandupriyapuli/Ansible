@@ -1,0 +1,16 @@
+- name: all var preferences
+  hosts: localhost
+  vars:
+    Variable: "This is Play Level Variable"
+  vars_files:
+  - 00-all-variables.yaml
+  vars_prompt:
+  -name: Taking input from Keyboard
+    prompt: "enter somthing you want: "
+    private: false
+  tasks:  
+  - name: Check Preference
+    vars: 
+      Variable: "This is Task Level Variable"
+    ansible.builtin.debug:
+      msg: "Hello,Good Morning {{Student}}"  
