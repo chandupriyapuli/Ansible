@@ -6,7 +6,7 @@
     Amount: "24,459"
   tasks:
   - name: print the given info
-    ansile.builtin.debug:
+    ansible.builtin.debug:
       msg: "Hi, I am {{Student}}. I recently Joined {{CourseDuration}} duration course and fee is: {{Amount}} Rupees" 
 
 
