@@ -1,6 +1,6 @@
 -name: variables1
-  hosts: localhost
-  vars:
+ hosts: localhost
+ vars:
     student: "SinduPriya"
     course-duration: "4-months"
     amount: "24,459"
@@ -12,12 +12,12 @@
 
 
  - name: variables2
-    hosts: localhost
-    vars: #variable declaration
-      Course: "Terraform"
-      Trainer: "Siva"
-      Duration: "15hrs"
-    tasks:
-    - name: print information
-      ansible.builtin.debug:
-        msg: "Hi, We are learning {{Course}} from Trainer {{Trainer}}, Duration is {{Duration}}."
+   hosts: localhost
+   vars: #variable declaration
+    Course: "Terraform"
+    Trainer: "Siva"
+    Duration: "15hrs"
+  tasks:
+  - name: print information
+     ansible.builtin.debug:
+       msg: "Hi, We are learning {{Course}} from Trainer {{Trainer}}, Duration is {{Duration}}."
