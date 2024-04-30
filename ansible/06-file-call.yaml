@@ -1,0 +1,10 @@
+- name: calling var_file
+  hosts: localhost
+  vars-file:
+  - 00-all-variables.yaml
+  tasks:
+  - name: fetch the variable info to current class
+    ansible.builtin.debug:
+      msg:
+      - "The Current running Course is: {{Course}}"
+      - "And they They are Expecting {{Amount}}"  
