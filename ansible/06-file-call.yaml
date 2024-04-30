@@ -1,6 +1,6 @@
 - name: calling var_file
   hosts: localhost
-  vars-files:
+  vars_files:
    - 00-all-variables.yaml
   tasks:
   - name: fetch the variable info to current class
