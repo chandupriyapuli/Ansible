@@ -2,10 +2,10 @@
   hosts: localhost
   vars_prompt:
   - name: USERNAME
-    prompt: "Enter USERNAME:"
+    prompt: "Enter UserName:"
     private: false
   - name: PASSWORD
-    prompt: "Enter PASSWORD:"
+    prompt: "Enter Password:"
     private: true
   tasks:
     ansible.uiltin.debug:
