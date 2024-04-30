@@ -5,8 +5,8 @@
     Duration: "4_months"
   tasks:
   - name: Print Course
-     vars:
-       Course: "DevOps"
+    vars:
+      Course: "DevOps"
     ansible.builtin.debug:
       msg: "Hello, I am Taking {{Course}} Duration is: {{Duration}}"
       msg: "Overrided The Variable Course"
