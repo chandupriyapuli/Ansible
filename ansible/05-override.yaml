@@ -9,7 +9,7 @@
       Course: "DevOps"
     ansible.builtin.debug:
       msg: "Hello, I am Taking {{Course}} Duration is: {{Duration}}"
-      msg: "Overrided The Variable Course"
+      #msg: "Overrided The Variable Course"
 
   - name: Print Course
     ansible.builtin.debug:
