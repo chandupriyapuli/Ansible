@@ -1,11 +1,11 @@
--name: variables1
- hosts: localhost
- vars:
-    student: "SinduPriya"
-    course-duration: "4-months"
-    amount: "24,459"
+- name: variables1
+  hosts: localhost
+  vars:
+    Student: "SinduPriya"
+    Course-duration: "4-months"
+    Amount: "24,459"
   tasks:
-  -name: print the given info
+  - name: print the given info
     ansile.builtin.debug:
       msg: "Hi, I am {{name}}. I recently Joined {{course-duration}} duration course and fee is: {{amount}} Rupees" 
 
