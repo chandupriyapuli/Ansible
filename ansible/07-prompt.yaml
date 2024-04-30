@@ -1,4 +1,4 @@
-- name: variable From Prompt
+- name: variable From keybaord
   hosts: localhost
   vars_prompt:
   - name: USERNAME
