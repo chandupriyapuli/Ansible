@@ -1,6 +1,6 @@
 - name: Passing Arguments
-hosts: localhost
-tasks:
-- name: Get args from keyboard
-  ansible.builtin.debug:
-    msg: "persion Name is: {{PERSON}} good to meet you {{HELLO}}"
+  hosts: localhost
+  tasks:
+  - name: Get args from keyboard
+    ansible.builtin.debug:
+      msg: "persion Name is: {{PERSON}} good to meet you {{HELLO}}"
