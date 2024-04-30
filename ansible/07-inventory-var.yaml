@@ -1,0 +1,11 @@
+- name: Getting Vars From Inventory
+  hosts: localhost
+  tasks:
+  - name: Vars fron invent
+    vars:
+      timings: "7:15 to 8:45AM "
+    ansible.builtin.debug:
+      msg: "Hi, We are learning {{Course}} from Trainer {{Trainer}}, Duration is {{CourseDuration}}: 4 months. Timings are: {{timings}}"
+
+
+         
