@@ -2,7 +2,7 @@
   hosts: localhost
   vars:
     Student: "SinduPriya"
-    Course-Duration: "4-months"
+    CourseDuration: "4months"
     Amount: "24,459"
   tasks:
   - name: print the given info
