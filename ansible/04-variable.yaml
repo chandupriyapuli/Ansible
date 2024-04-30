@@ -11,9 +11,9 @@
 
 
 
- - name: variables2
-   hosts: localhost
-   vars: #variable declaration
+- name: variables2
+  hosts: localhost
+  vars: #variable declaration
     Course: "Terraform"
     Trainer: "Siva"
     Duration: "15hrs"
