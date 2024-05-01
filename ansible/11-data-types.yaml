@@ -1,0 +1,22 @@
+- name: Data Types
+  hosts: localhost
+  vars: 
+    Course: DevOps with Aws
+    Tool:
+    - Linux
+    - Ansible
+    - AWS
+    - Shell Script
+    Experience:
+      DevOps: 3
+      Ansible: 1
+      Docker: 3
+      Kubarnetes: 3
+    RealProject: true
+  tasks:
+  - name: Print DataTypes
+    ansible.builtin.debug:
+      msg: 
+      - "Hello, I have done {{Course}} with I gain {{Experience}}. Is it real Time {{RealProject}}"    
+
+

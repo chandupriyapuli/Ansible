@@ -7,4 +7,4 @@
     ansible.builtin.debug:
       msg:
       - "The Current running Course is: {{Course}}"
-      - "And they They are Expecting {{Amount}}"  
+      - "And They are Expecting {{Amount}}"  
