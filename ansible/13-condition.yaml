@@ -9,5 +9,8 @@
     ansible.builtin.debug:
       msg: "The Given Number {{Number}} is Lessthan 10 "
     when: Number | int < 10     
-
-  
+  tasks:
+  - name: Print greater Number
+    ansible.builtin.debug:
+      msg: "The Given Number {{Number}} is greaterthan 10 "
+    # when: Number | int >= 10       
