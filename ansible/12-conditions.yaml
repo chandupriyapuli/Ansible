@@ -13,6 +13,7 @@
 
   - name: create User
     ansible.builtin.command: useradd expence
+      msg: "User Created"
     when: User.rc !=0
 
   - name: print SomeThing Here
