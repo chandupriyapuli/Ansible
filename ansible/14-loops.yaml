@@ -9,3 +9,16 @@
     - Arrays
     - Java
     - Core  
+
+- name: Install Packages
+  hosts: localhost
+  become: yes
+  tasks:
+  - name: Packages
+    ansible.builtin.dnf:
+      name: "{{item}}"
+      state: latest
+    loop:
+    - nginx
+    - mysql
+    - postfix      
