@@ -1,0 +1,11 @@
+- name: Print Simple Loop
+  hosts: localhost
+  tasks:
+  - name: Enter List
+    ansible.builtin.debug:
+      msg: "Hello {{item}}"
+    loop:
+    - list
+    - Arrays
+    - Java
+    - Core  
