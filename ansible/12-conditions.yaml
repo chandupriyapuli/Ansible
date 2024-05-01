@@ -1,0 +1,6 @@
+- name: Ansible Conditions
+  hosts: localhost
+  become: yes
+  tasks:
+  - name: Check User Exist Or Not
+    ansible.builtin.command: id expence
