@@ -4,12 +4,20 @@
   tasks:
   - name: Check User Exist Or Not
     ansible.builtin.command: id expence
-    register: User
+    register: User # Here it will Catch the Exception of Id expence.. It behaves Like Dynamic var. 
     ignore_errors: true
 
-  - name: print User info
+  - name: print User info # Here it will print the Catched Exception.
     ansible.builtin.debug:
       msg: "User info {{User}}"
-      
-        
+
+  - name: create User
+    ansible.builtin.command: useradd expence
+    when: User.rc !=0
+
+  - name: print SomeThing Here
+    ansible.buuiltin.debug:
+      msg: "HI, HELLO"
+
+
     
