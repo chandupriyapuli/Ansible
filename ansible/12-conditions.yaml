@@ -4,3 +4,4 @@
   tasks:
   - name: Check User Exist Or Not
     ansible.builtin.command: id expence
+    ignore_errors: true
