@@ -16,7 +16,7 @@
     when: User.rc !=0
 
   - name: print SomeThing Here
-    ansible.buuiltin.debug:
+    ansible.builtin.debug:
       msg: "HI, HELLO"
 
 
