@@ -24,7 +24,7 @@
     - postfix      
 
 - name: Install Packages
-  hosts: web
+  hosts: localhost
   become: yes
   tasks:
   - name: Packages
