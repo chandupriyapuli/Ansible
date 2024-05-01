@@ -22,3 +22,16 @@
     - nginx
     - mysql
     - postfix      
+
+- name: Install Packages
+  hosts: web
+  become: yes
+  tasks:
+  - name: Packages
+    ansible.builtin.dnf:
+      name: "{{ item.name }}"
+      state: "{{ item.state }}"
+    loop:
+    - {neme: 'nginx', state: 'latest' }
+    - {name: 'mysql', state: 'absent'}
+    - {name: 'postfix', state: 'absent' }          
