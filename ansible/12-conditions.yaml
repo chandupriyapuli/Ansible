@@ -14,9 +14,7 @@
   - name: create User
     ansible.builtin.command: useradd expence
     when: User.rc !=0
-      msg: 
-        - "User Created"
-
+      
   - name: print SomeThing Here
     ansible.builtin.debug:
       msg: "HI, HELLO"
