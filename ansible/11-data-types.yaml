@@ -2,17 +2,17 @@
   hosts: localhost
   vars: 
     Course: DevOps with Aws
-    Tool:
+    Tool:  # LIst
     - Linux
     - Ansible
     - AWS
     - Shell Script
-    Experience:
+    Experience: # MAP / Dictionary
       DevOps: 3
       Ansible: 1
       Docker: 3
       Kubarnetes: 3
-    RealProject: true
+    RealProject: true  # Boolean True/False
   tasks:
   - name: Print DataTypes
     ansible.builtin.debug:
