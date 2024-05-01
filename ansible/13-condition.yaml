@@ -1,4 +1,4 @@
-- name: Print smallest and biggest Number
+- name: Print smallest and biggest Num
   hosts: localhost
   vars_prompt:
   - name: Number
